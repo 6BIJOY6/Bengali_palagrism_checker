@@ -38,15 +38,4 @@ flowchart TD
     Compare --> Result[Similarity Score + Confidence]
     Result --> UI
 
-Project Structure
-.
-├── main.py                  # FastAPI backend
-├── templates/
-│   └── index.html            # Frontend UI
-├── static/                   # (optional assets, CSS/JS/images)
-├── bangla_stopwords.xlsx     # Stopword list
-├── tfidf_vectorizer.pkl      # Pretrained TF-IDF vectorizer
-├── tfidf_matrix.npy          # Corpus TF-IDF matrix
-├── sbert_embeddings.npy      # Corpus SBERT embeddings
-├── requirements.txt
-└── README.md
+
