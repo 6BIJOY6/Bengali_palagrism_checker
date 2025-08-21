@@ -26,18 +26,5 @@ It provides a **modern, responsive web interface** where users can paste text or
 
 ---
 
-## 🏗️ Architecture  
-
-```mermaid
-flowchart TD
-  U[User] -->|Text or File Upload| UI[Frontend: HTML/CSS/JS]
-  UI -->|POST /api/check| API[FastAPI Backend]
-  API --> PRE[Preprocess: regex, tokenization, stopwords]
-  PRE --> MOD[Models: TF-IDF + SBERT]
-  MOD --> CMP[Cosine similarity vs corpus]
-  CMP --> RES[Combined score + confidence]
-  RES --> UI
-```
-
 
 
